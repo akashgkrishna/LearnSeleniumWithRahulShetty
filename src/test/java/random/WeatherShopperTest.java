@@ -132,10 +132,13 @@ public class WeatherShopperTest {
         String email = driver.findElement(
                         By.xpath("(//div[contains(@class, 'card-front')]//pre)[3]"))
                 .getText().replaceAll(" ", "").toLowerCase().concat("@gmail.com");
+
         String cardNumber = driver.findElement(By.xpath("(//div[contains(@class, 'card-front')]//pre)[1]"))
                 .getText().replaceAll("[^0-9-]", "");
+
         String expiryDate = driver.findElement(By.xpath("(//div[contains(@class, 'card-front')]//pre)[2]"))
                 .getText().replaceAll("[^0-9-]", "");
+
         String cvv = driver.findElement(By.xpath("(//div[contains(@class, 'card-back')]//pre)"))
                 .getText().replaceAll("[^0-9-]", "");
 

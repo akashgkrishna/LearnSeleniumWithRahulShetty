@@ -28,7 +28,7 @@ public class Strings {
 //        return new String(chars);
 //    }
 
-    public static String createEmail(String string){
+    public static String createEmail(String string) {
         String lowerCase = string.replace(" ", "").toLowerCase();
         System.out.println(lowerCase);
         lowerCase = lowerCase.concat("@gmail.com");
