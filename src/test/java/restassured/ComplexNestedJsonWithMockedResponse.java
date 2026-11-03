@@ -56,29 +56,30 @@ public class ComplexNestedJsonWithMockedResponse {
     }
 
     public static String mockResponse() {
-        return "{\n" +
-                "  \"dashboard\": {\n" +
-                "    \"purchaseAmount\": 910,\n" +
-                "    \"website\": \"rahulshettyacademy.com\"\n" +
-                "  },\n" +
-                "  \"courses\": [\n" +
-                "    {\n" +
-                "      \"title\": \"Selenium Python\",\n" +
-                "      \"price\": 50,\n" +
-                "      \"copies\": 6\n" +
-                "    },\n" +
-                "    {\n" +
-                "      \"title\": \"Cypress\",\n" +
-                "      \"price\": 40,\n" +
-                "      \"copies\": 4\n" +
-                "    },\n" +
-                "    {\n" +
-                "      \"title\": \"RPA\",\n" +
-                "      \"price\": 45,\n" +
-                "      \"copies\": 10\n" +
-                "    }\n" +
-                "  ]\n" +
-                "}";
+        return """
+                {
+                  "dashboard": {
+                    "purchaseAmount": 910,
+                    "website": "rahulshettyacademy.com"
+                  },
+                  "courses": [
+                    {
+                      "title": "Selenium Python",
+                      "price": 50,
+                      "copies": 6
+                    },
+                    {
+                      "title": "Cypress",
+                      "price": 40,
+                      "copies": 4
+                    },
+                    {
+                      "title": "RPA",
+                      "price": 45,
+                      "copies": 10
+                    }
+                  ]
+                }""";
     }
 
     public static int totalPurchaseAmount(JsonPath jsonPath) {
