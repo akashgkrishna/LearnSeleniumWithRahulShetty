@@ -1,4 +1,4 @@
-package restassured.jira.create.issues;
+package restassured.jira.get.issues;
 
 import io.restassured.response.Response;
 import org.testng.Assert;
