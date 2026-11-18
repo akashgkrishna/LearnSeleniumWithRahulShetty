@@ -1,6 +1,7 @@
 package restassured.oauth;
 
 import io.restassured.response.Response;
+import restassured.oauth.getcourse.with.pojo.response.GetCourseResponse;
 
 import static io.restassured.RestAssured.given;
 
