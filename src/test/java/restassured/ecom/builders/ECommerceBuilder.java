@@ -13,4 +13,12 @@ public class ECommerceBuilder {
                 .setContentType(ContentType.JSON)
                 .build();
     }
+
+    public static RequestSpecification getAllProductsSpec(String authorization) {
+        return new RequestSpecBuilder()
+                .setBaseUri(BASE_URI)
+                .setContentType(ContentType.JSON)
+                .addHeader("Authorization", authorization)
+                .build();
+    }
 }
