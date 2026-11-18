@@ -9,7 +9,7 @@ import restassured.ecom.models.auth.LoginResponse;
 
 public class LoginTest {
     @Test
-    public static void loginTest() {
+    public void loginTest() {
         // Arrange
         String userEmail = "nandume7@gmail.com";
         String userPassword = "Nandu@123";
